@@ -1,0 +1,218 @@
+@function num($n){
+	@return $n/20
+}
+html,body{
+	height:100%;
+	background:#f4f4f4;
+}
+*{
+	padding:0;
+	margin:0;
+}
+a{
+	text-decoration:none;
+}
+li{
+	list-style:none;
+}
+#login{
+	height:100%;
+	width:100%;
+	.header{
+		position: absolute;
+	    left: 0;
+	    right: 0;
+	    top: 0;
+	    height: num(50rem);
+	    z-index: 20;
+		.header-sp1{
+            z-index: 2;
+		    display: inline-block;
+		    position: absolute;
+		    right: num(40rem);
+		    top: num(-5rem);
+		    padding: num(20rem) 0 num(20rem) num(20rem);
+		    span{
+		    	float: left;
+			    margin-right: num(12rem);
+			    width: num(22rem);
+			    height: num(22rem);
+			    background: url(../img/icon_er.png) no-repeat;
+			    background-size: num(22rem);
+		    }
+		}
+		.header-sp2{
+            display: inline-block;
+		    width: num(22rem);
+		    height: num(22rem);
+		    background: url(../img/user_message_icon.png) no-repeat;
+		    background-position: center center;
+		    background-size: num(22rem);
+		    position: absolute;
+		    right: 0;
+		    top: num(-5rem);
+		    padding: num(20rem) num(10rem) num(20rem) num(20rem);   
+		}
+	}
+	.login-top{
+		position: relative;
+	    padding-top: num(24rem);
+	    min-height: num(91rem);
+	    color: #fff;
+	    background: #fff url(../img/my_bgnew.png) center bottom no-repeat;
+	    background-size: cover;
+	    overflow: hidden;
+		.login-top-sp1{
+            background: url(../img/bg_head.png) no-repeat;
+		    background-size: auto num(72rem);
+		    display: inline-block;
+		    width: num(72rem);
+		    height: num(72rem);
+		    margin: 0 0 0 num(16rem);
+		    border-radius: num(50rem);
+		    vertical-align: middle;
+		    text-align: center;
+		}
+		.login-top-sp2{
+            display: inline-block;
+		    height: num(16rem);
+		    padding: num(7rem) num(10rem);
+		    color: #fff;
+		    border-radius: 2px;
+		    font-size: num(14rem);
+		    line-height: num(16rem);
+		    letter-spacing: 1px;
+		    background-color: #69c575;
+		    margin-left: num(5rem);
+		    padding-top: num(6rem);
+            padding-bottom: num(8rem);
+		}
+	}
+	.login-top-d{
+		height:num(70rem);
+		margin-bottom: 10px;
+	    padding-left: 15px;
+	    background-color: white;
+	}
+	.login-top-ul{
+		background:#fff;
+		padding-top: num(20rem);
+	    padding-bottom: num(12rem);
+	    position: absolute;
+	    left: 0;
+	    top: num(103rem);
+	    width: 100%;
+	    z-index: 15;
+		.login-top-li{
+			position: relative;
+		    text-align: center;
+		    width: 30%;
+		    display: inline-block;
+            .li-top-a{
+            	line-height: num(25rem);
+			    text-align: center;
+			    font-size: num(12rem);
+			    display: block;
+			    position: relative;
+			    color: #323232;
+            	.li-top-asp1{
+                    position: relative;
+				    left: 50%;
+				    background: url(../img/icon_packet.png) no-repeat;
+				    background-size: num(25rem) num(25rem);
+				    display: block;
+				    width: num(25rem);
+				    height: num(25rem);
+				    margin-left: -12px;
+            	}
+            	.li-top-asp{
+            		display: block;
+				    height: 25px;
+				    line-height: 25px;
+				    font-size: 18px;
+				    color: #323232;
+            	}
+            }
+		}
+	}
+	.login-pic{
+		width: 100%;
+        height: num(75rem);
+		padding-left: 0;
+		margin-bottom:10px;
+		background:#fff;
+		img{
+			width: 100%;
+			height:100%;
+		    display: block;
+		}
+        
+	}
+	.login-list{
+		padding-left: 0;
+	    font-size: 0;
+	    margin-bottom: 10px;
+	    background-color: white;
+		.login-list-a{
+			display: inline-block;
+		    padding: num(25rem) 0;
+		    width: 25%;
+		    border-bottom: 1px solid #e8e8e8;
+		    text-align: center;
+		    line-height: num(35rem);
+		    position: relative;
+		    color: #323232;
+		    font-size: num(13rem);
+            img{
+            	background-size: num(25rem) num(25rem);
+			    display: block;
+			    width: num(25rem);
+			    height: num(25rem);
+			    margin: 0 auto;
+            }
+		}
+	}
+	.close{
+		padding-bottom: num(64rem);
+		a{
+		// visibility: visible;
+        margin-top: num(8rem);
+        display: block;
+	    visibility: hidden;
+	    height: num(46rem);
+	    color: #ff5757;
+	    text-align: center;
+	    font-size: num(16rem);
+	    line-height: num(46rem);
+	    background-color: #fff;
+	    }
+	}
+	// end
+	.footer{
+        height:num(50rem);
+	    width:100%;
+	    background:#fff;
+	    border-top:num(1rem) solid #e7e9e4;
+	    position:fixed;
+		bottom:0;
+		left:0;
+		z-index:100;
+		div{
+			margin-top:num(6rem);
+			float:left;
+		    width:20%;
+		    text-align:center;
+		    font-size:num(12rem);
+		    color:#333;
+			span{
+				font-size:num(24rem);
+				font-family:"iconfont";
+			}
+		}
+		.footer-tip1{
+			span{
+				color:#39ac69;
+			}
+		}
+	}
+}

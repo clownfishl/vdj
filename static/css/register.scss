@@ -1,0 +1,218 @@
+@function num($n){
+	@return $n/20
+}
+html,body{
+	height:100%;
+	text-align: center;
+	color: #333;
+}
+*{
+	padding:0;
+	margin:0;
+}
+a{
+	text-decoration:none;
+}
+li{
+	list-style:none;
+}
+#main{
+	.header{
+	    height: num(45rem);
+	    line-height: num(45rem);
+	    color: #616161;
+	    font-size: num(17rem);
+	    border-bottom:1px solid #bbb;
+	    background:#f9f9f9;
+	    .header-arrow{
+	    	width: num(22rem);
+		    height: num(22rem);
+		    overflow: hidden;
+		    position: absolute;
+		    top: num(12rem);
+		    left: num(12rem);
+	    	background:url(../img/iconBg.png) no-repeat 0 num(-63rem);
+	    	background-size:100% auto;
+	    } 
+	}
+	.center{
+		left: 0;
+	    background: white;
+	    padding: 0 num(20rem) num(20rem) num(20rem);
+	    overflow: auto;
+	    width:100%;
+	    box-sizing:border-box;
+		.center-container{
+		    margin: 0 auto;
+		    padding-top: num(5rem);
+			.input-container{
+				position: relative;
+			    width: 100%;
+			    height:num(48rem);
+			    line-height: num(48rem);
+			    overflow: hidden;
+			    padding: 0 num(5rem);
+			    background-color: #fff;
+			    border-bottom: 1px solid #d7d7d7;
+			    box-sizing:border-box;
+				.center-input1{
+                    margin-left: 0;
+                    width:100%;
+                    padding:0 num(110rem) 0 0;
+                    border-radius: 0;
+				    border: 0;
+				    display: inline-block;
+				    box-sizing: border-box;
+				    font-size: num(14rem);
+				    outline: 0;
+				}
+				.center-input1-sp{
+					position:absolute;
+					width:num(75rem);
+				    height: num(23rem);
+				    right: num(5rem);
+				    top: num(12.5rem);
+				    border-left: 1px solid #d7d7d7;
+					img{
+                        width: num(75rem);
+					    height: num(30rem);
+					    margin-top:num(-28rem);
+					    border: 1px solid transparent;
+					    vertical-align:middle;
+					}
+				}
+			}
+			.input-box{
+				position:relative;
+				.input-container{
+					box-sizing: border-box;
+					position: relative;
+				    width: 100%;
+				    height: num(48rem);
+				    line-height: num(48rem);
+				    overflow: hidden;
+				    padding: 0 num(5rem);
+				    background-color: #fff;
+				    border-bottom: 1px solid #d7d7d7;
+					.input-box-sp{
+                        position: absolute;
+					    width: num(62rem);
+					    text-align:right;
+				        .input-box-sp2{
+					        width: 0;
+						    height: 0;
+						    border-left: num(4rem) solid transparent;
+						    border-right: num(4rem) solid transparent;
+						    border-top: num(5rem) solid #ABABAB;
+						    display: inline-block;
+						    margin: 0 num(7rem) 0 num(2rem);
+						    padding-top: num(1rem);
+				        }
+					}
+					.center-input2{
+						margin-left:0;
+                         width: 100%;
+					    padding-left: num(60rem);
+					    padding-right: num(130rem);
+					    border-radius: 0;
+					    border: 0;
+					    display: inline-block;
+					    box-sizing: border-box;
+					    font-size: num(14rem);
+					    outline: 0;
+					    box-sizing:border-box;
+					}
+				}
+				.input-btn{
+                    width: num(110rem);
+				    border-left:1px solid #d7d7d7!important;
+				    border-right: 0;
+				    border-bottom: 0;
+				    border-top: 0;
+				    padding: 0;
+				    height: num(23rem);
+				    line-height: num(23rem);
+				    top: num(12.5rem);
+				    outline: 0;
+				    background-color: #fff;
+	                color: #848689;
+	                position: absolute;
+	                right: 0;
+	                font-size: num(14rem);
+				}
+			}
+			.input-container{
+				box-sizing: border-box;
+				position: relative;
+			    width: 100%;
+			    height: num(48rem);
+			    line-height: num(48rem);
+			    overflow: hidden;
+			    padding: 0 num(5rem);
+			    background-color: #fff;
+			    border-bottom: 1px solid #d7d7d7;
+				.center-input3{
+					margin-left:0;
+                    width: 100%;
+				    padding-right: num(32rem);
+				    padding-left: 0;
+				    border-radius: 0;
+				    border: 0;
+				    display: inline-block;
+				    box-sizing: border-box;
+				    font-size:num(14rem);
+				    outline: 0;
+				}
+				.center-input4{
+                     width: 100%;
+                    padding-right:num(65rem);
+                    padding-left:0;
+                    border-radius: 0;
+				    border: 0;
+				    font-size:num(14rem);
+				    outline:none;
+				    display:inline-block;
+				    box-sizing: border-box;
+				}
+				.psd-visible{
+					position: absolute;
+				    right: num(5rem);
+				    top: num(15rem);
+				    height: num(18rem);
+				    overflow: hidden;
+				    z-index: 99;
+                    span{
+                        display: block;
+					    width: num(30rem);
+					    height: num(18rem);
+					    background-image: url(../img/hide_password.png);
+					    background-repeat: no-repeat;
+					    background-size: 100% auto;
+					    background-sizing: padding-box;
+					    color: #fff;
+                    }
+				}
+			}
+			.notice{
+                font-size: num(12rem);
+                color:#f23030;
+			    line-height:num(30rem);
+			    min-height: num(15rem);
+			    text-align: left;
+			    span{
+			        color: #999;
+			    }
+			}
+			a{  
+				display:block;
+                height: num(45rem);
+			    line-height: num(46rem);
+			    border-radius: 2px;
+			    border: 0;
+			    background-color: #eee;
+			    font-size: num(16rem);
+			    color:#848489;
+			}
+		}
+	}
+}

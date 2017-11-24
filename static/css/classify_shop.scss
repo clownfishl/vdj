@@ -1,0 +1,18 @@
+@function num($n){
+	@return $n/20
+}
+html,body{
+	height:100%;
+	font-size: num(14rem);
+    text-align: center;
+}
+*{
+	padding:0;
+	margin:0;
+}
+a{
+	text-decoration:none;
+}
+li{
+	list-style:none;
+}

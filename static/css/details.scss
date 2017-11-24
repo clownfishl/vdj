@@ -1,0 +1,77 @@
+@function num($n){
+	@return $n/20
+}
+html,body{
+	height:100%;
+	background:#f4f4f4;
+}
+*{
+	padding:0;
+	margin:0;
+}
+a{
+	text-decoration:none;
+}
+li{
+	list-style:none;
+}
+#details{
+	background-color: #a5f085;
+    .dt-lists{
+    	overflow:hidden;
+    	.dt-ul{
+    		font-size: 0;
+            padding-bottom: 8px;
+    		li{
+    			width: 96%;
+			    height: 90px;
+			    position: relative;
+			    display: inline-block;
+			    margin-left: 2%;
+			    margin-top: 8px;
+			    vertical-align: top;
+			    font-size: 14px;
+			    background-color: #fff;
+    			a{
+    				display: block;
+    				color:#555;
+    				.dt-ul-as1{
+    					    background: #FFCE0B;
+    					    top: 0px;
+    left: 8px;
+                        span{
+
+                        }
+    				}
+    				img{
+
+    				}
+    				.dt-ul-ad1{
+    					.dt-ul-ads1{
+
+    					}
+    					.dt-ul-add1{
+    						.dt-add1-sp1{
+                                .dt-sp1-em1{
+
+                                }
+                                .dt-sp1-em2{
+
+                                }
+    						}
+    						.dt-add1-sp2{
+
+    						}
+    						.dt-add1-sp3{
+
+    						}
+    					}
+    				}
+    			}
+    		}
+    	}
+    }
+}
+
+	
+	

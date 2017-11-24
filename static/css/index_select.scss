@@ -1,0 +1,95 @@
+@function num($n){
+	@return $n/20
+}
+html,body{
+	height:100%;
+	font-size: num(14rem);
+    // text-align: center;
+}
+*{
+	padding:0;
+	margin:0;
+}
+a{
+	text-decoration:none;
+}
+li{
+	list-style:none;
+}
+#main{
+	width: 100%;
+    height: 100%;
+    background: #f4f4f4;
+    margin-bottom: num(45rem);
+	.header{
+		position: relative;
+	    padding: num(10rem) num(15rem);
+	    background-color: white;
+	    height: num(32rem);
+		input{
+            width: 87%;
+            left: num(15rem);
+            position: absolute;
+		    right: num(10rem);
+		    top: num(10rem);
+		    background: #ffffff url(../img/icon_swich.png) no-repeat num(5rem);
+		    border-radius:num(5rem);
+		    background-size: num(13rem);
+		    color: #666666;
+		    outline: none;
+		    border: 1px solid #eaeaea;
+		    font-size: num(13rem);
+		    line-height: num(22rem);
+		    padding: num(5rem) 0 num(5rem) num(20rem);
+		}
+    }
+	.pos{
+		height: num(50rem);
+	    padding: 0 num(15rem);
+	    background: #ffffff;
+	    position: relative;
+	    margin-top:num(10rem);
+		span{
+            display: inline-block;
+		    vertical-align: top;
+		    width: num(20rem);
+		    height: num(50rem);
+		    background: url(../img/location-eye.png) no-repeat 0 center;
+		    background-size: num(20rem) num(20rem);
+		    margin-right: num(10rem);
+		}
+		p{
+            line-height: num(50rem);
+		    color: #47b34f;
+		    font-size: num(16rem);
+		    display: inline-block;
+		    &::after{
+		    	content: '';
+			    position: absolute;
+			    top:num(0rem);
+			    right: 0;
+			    width: num(40rem);
+			    height: num(50rem);
+			    background: url(../img/address_arrow_icon.png) no-repeat center;
+			    background-size: num(8rem) num(13rem);
+		    }
+		}
+	}
+	.addr{
+        position: absolute;
+	    top: num(116rem);
+	    right: 0;
+	    bottom: 0;
+	    left: 0;
+	    padding-top: num(165rem);
+	    font-size: num(16rem);
+	    color: #000;
+	    line-height: num(26rem);
+	    text-align: center;
+	    background: #fff url(../img/location-eye1.png) center 45px no-repeat;
+	    background-size: num(94rem);
+	    margin-top: num(10rem);
+	}
+}
+
+

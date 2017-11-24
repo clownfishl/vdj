@@ -1,0 +1,40 @@
+html, body {
+  height: 100%;
+  background: #f4f4f4; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+#details {
+  background-color: #a5f085; }
+  #details .dt-lists {
+    overflow: hidden; }
+    #details .dt-lists .dt-ul {
+      font-size: 0;
+      padding-bottom: 8px; }
+      #details .dt-lists .dt-ul li {
+        width: 96%;
+        height: 90px;
+        position: relative;
+        display: inline-block;
+        margin-left: 2%;
+        margin-top: 8px;
+        vertical-align: top;
+        font-size: 14px;
+        background-color: #fff; }
+        #details .dt-lists .dt-ul li a {
+          display: block;
+          color: #555; }
+          #details .dt-lists .dt-ul li a .dt-ul-as1 {
+            background: #FFCE0B;
+            top: 0px;
+            left: 8px; }
+
+/*# sourceMappingURL=details.css.map */

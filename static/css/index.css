@@ -1,0 +1,493 @@
+html, body {
+  height: 100%;
+  background: #f4f4f4; }
+
+* {
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none; }
+
+li {
+  list-style: none; }
+
+#main {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column; }
+  #main .header {
+    height: 2.8rem;
+    width: 100%;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    color: #555;
+    font-size: 0.85rem;
+    text-align: center;
+    line-height: 2.2rem;
+    background: url(../img/index_black.png) no-repeat;
+    background-size: 100% 100%; }
+    #main .header a .span-addr-left {
+      height: 1.5rem;
+      width: 0.75rem;
+      float: left;
+      font-size: 0.7rem;
+      font-family: "iconfont";
+      color: #fff; }
+    #main .header a .span-p {
+      color: #fff;
+      float: left;
+      font-size: 0.7rem; }
+    #main .header .span-arrow-left {
+      color: #fff;
+      float: left;
+      font-family: "iconfont"; }
+    #main .header .span-search-left {
+      float: left;
+      font-family: "iconfont"; }
+    #main .header .inp {
+      float: left;
+      height: 1.5rem;
+      width: 8.65rem;
+      line-height: 1.5rem;
+      overflow: hidden;
+      margin-left: 0.25rem;
+      margin-top: 0.35rem;
+      margin-bottom: 0.35rem;
+      border-radius: 20px;
+      color: #fff;
+      font-size: 14px;
+      background: rgba(255, 255, 255, 0.35); }
+      #main .header .inp span {
+        margin-left: 0.5rem;
+        font-family: "iconfont"; }
+      #main .header .inp input {
+        width: 7.15rem;
+        margin-left: 0.25rem;
+        border: none;
+        outline: none;
+        background-color: transparent; }
+      #main .header .inp input::-webkit-input-placeholder {
+        color: #fff;
+        ont-size: 14px;
+        text-align: left; }
+    #main .header .tip {
+      float: right;
+      margin-right: 10px;
+      color: #fff; }
+      #main .header .tip span {
+        font-family: "iconfont"; }
+  #main .center {
+    margin-bottom: 2.5rem;
+    flex: 1; }
+    #main .center #swiper-container1 {
+      width: 100%;
+      height: auto; }
+      #main .center #swiper-container1 .swiper-slide {
+        height: auto; }
+        #main .center #swiper-container1 .swiper-slide img {
+          height: 100%;
+          width: 100%; }
+      #main .center #swiper-container1 .swiper-pagination-bullet {
+        border: 2px solid #fff;
+        background: transparent;
+        opacity: 1;
+        box-sizing: border-box; }
+      #main .center #swiper-container1 .swiper-pagination-bullet-active {
+        background: #fff;
+        opacity: 1; }
+    #main .center .product-list {
+      width: 100%;
+      overflow-x: auto;
+      background: #fff; }
+      #main .center .product-list a {
+        display: inline-block;
+        width: 2.9rem;
+        padding: 1rem 0 0.65rem;
+        font-size: 0.6rem;
+        line-height: 1rem;
+        color: #333;
+        text-align: center; }
+        #main .center .product-list a img {
+          overflow: hidden;
+          display: block;
+          margin: 0 auto;
+          width: 2.25rem;
+          height: 2.25rem; }
+    #main .center .wrapper {
+      margin-top: 0.4rem;
+      width: 16rem;
+      height: 4.9rem;
+      background: #fff; }
+      #main .center .wrapper img {
+        display: block;
+        margin: 0 auto;
+        width: 15rem;
+        height: 4.9rem; }
+    #main .center .time-limit {
+      width: 16rem;
+      height: 7.05rem;
+      background: #fff;
+      margin-top: 0.4rem;
+      padding-bottom: 0.25rem;
+      text-align: center; }
+      #main .center .time-limit .limit1 {
+        position: relative;
+        float: left;
+        width: 6.9rem;
+        border-right: 1px solid #ddd; }
+        #main .center .time-limit .limit1 .limit1-s1 {
+          display: block;
+          position: absolute;
+          right: 0;
+          top: 0;
+          width: 1.9rem;
+          height: 1.9rem; }
+          #main .center .time-limit .limit1 .limit1-s1 img {
+            width: 100%;
+            height: 100%; }
+        #main .center .time-limit .limit1 .limit1-s2 {
+          display: block;
+          margin-top: 1.5rem; }
+          #main .center .time-limit .limit1 .limit1-s2 img {
+            margin: 0 auto;
+            display: block;
+            height: 1rem; }
+        #main .center .time-limit .limit1 .limit1-s3 {
+          position: relative;
+          top: -0.4rem;
+          font-size: 0.6rem;
+          color: #999; }
+        #main .center .time-limit .limit1 img {
+          margin: 0 auto;
+          display: block;
+          height: 3.65rem; }
+      #main .center .time-limit .limit2 {
+        display: inline-block;
+        width: 7.95rem;
+        height: 3.65rem;
+        border-bottom: 1px solid #ddd;
+        text-align: left; }
+        #main .center .time-limit .limit2 .limit2-sp {
+          float: left;
+          display: block;
+          width: 4rem;
+          height: 2rem;
+          padding-left: 1rem;
+          font-size: 0.6rem;
+          margin-top: 0.9rem; }
+        #main .center .time-limit .limit2 img {
+          display: block;
+          float: left;
+          width: 2.35rem;
+          height: 2.35rem;
+          padding-top: 0.5rem; }
+      #main .center .time-limit .limit3 {
+        display: inline-block;
+        width: 7.95rem;
+        height: 3.65rem;
+        text-align: left; }
+        #main .center .time-limit .limit3 .limit3-sp {
+          float: left;
+          display: block;
+          width: 4rem;
+          height: 2rem;
+          padding-left: 1rem;
+          font-size: 0.6rem;
+          margin-top: 0.9rem; }
+        #main .center .time-limit .limit3 img {
+          display: block;
+          float: left;
+          width: 2.35rem;
+          height: 2.35rem;
+          padding-top: 0.5rem; }
+    #main .center .swiper-switch {
+      background: #fff; }
+      #main .center .swiper-switch #swiper-container2 {
+        margin: 0 auto;
+        width: 95%;
+        margin-top: 0.4rem;
+        background: #fff; }
+        #main .center .swiper-switch #swiper-container2 .swiper-wrapper .swiper-slide img {
+          height: 100%;
+          width: 100%; }
+        #main .center .swiper-switch #swiper-container2 .swiper-pagination-bullet {
+          border: 2px solid #fff;
+          background: transparent;
+          box-sizing: border-box; }
+        #main .center .swiper-switch #swiper-container2 .swiper-pagination-bullet-active {
+          background: #fff; }
+    #main .center .nearby-shop {
+      height: auto;
+      margin-top: 0.4rem;
+      background: #fff; }
+      #main .center .nearby-shop .nearby {
+        height: 2.5rem;
+        width: 16rem;
+        font-size: 0.7rem;
+        line-height: 2.5rem;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        color: #70704e;
+        text-align: center;
+        position: relative;
+        z-index: 100;
+        background: #fff; }
+        #main .center .nearby-shop .nearby span {
+          position: relative;
+          padding: 0 0.25rem;
+          background-color: #FFF;
+          display: inline-block;
+          height: 2.5rem;
+          line-height: 2.4rem;
+          font-size: 0.85rem;
+          font-weight: bold;
+          color: #333; }
+        #main .center .nearby-shop .nearby:before {
+          content: '';
+          height: 1px;
+          border-top: 1px solid #333;
+          width: 11.4rem;
+          position: absolute;
+          top: 50%;
+          margin-top: -1px;
+          left: 50%;
+          -webkit-transform: scaleY(0.5) translate(-50%, 0); }
+      #main .center .nearby-shop .nearby-ul .nearby-ul-li1 {
+        position: relative;
+        padding: 0.75rem 0.5rem;
+        min-height: 3.5rem;
+        border-top: 1px solid #e7e9e4;
+        background: #FFF; }
+        #main .center .nearby-shop .nearby-ul .nearby-ul-li1 .li1-d1 {
+          position: relative;
+          font-size: 0;
+          min-height: 2.75rem; }
+          #main .center .nearby-shop .nearby-ul .nearby-ul-li1 .li1-d1 .d1-son {
+            position: relative; }
+            #main .center .nearby-shop .nearby-ul .nearby-ul-li1 .li1-d1 .d1-son .d1-son-a {
+              position: absolute;
+              left: 0;
+              top: 0;
+              bottom: 0;
+              float: none; }
+              #main .center .nearby-shop .nearby-ul .nearby-ul-li1 .li1-d1 .d1-son .d1-son-a .d1-son-as {
+                position: relative;
+                display: block; }
+                #main .center .nearby-shop .nearby-ul .nearby-ul-li1 .li1-d1 .d1-son .d1-son-a .d1-son-as img {
+                  float: left;
+                  width: 3.2rem;
+                  height: 3.2rem;
+                  border-radius: 4px;
+                  border: 1px solid #e8e8e8;
+                  display: inline-block;
+                  margin-right: 0.4rem; }
+            #main .center .nearby-shop .nearby-ul .nearby-ul-li1 .li1-d1 .d1-son .d1-son-d {
+              font-size: 0.6rem;
+              color: #999;
+              margin-left: 3.8rem; }
+              #main .center .nearby-shop .nearby-ul .nearby-ul-li1 .li1-d1 .d1-son .d1-son-d .d1-son-da {
+                color: #555; }
+                #main .center .nearby-shop .nearby-ul .nearby-ul-li1 .li1-d1 .d1-son .d1-son-d .d1-son-da .d1-da-dson {
+                  height: 1rem;
+                  overflow: hidden;
+                  display: flex;
+                  flex: 1; }
+                  #main .center .nearby-shop .nearby-ul .nearby-ul-li1 .li1-d1 .d1-son .d1-son-d .d1-son-da .d1-da-dson h2 {
+                    font-size: 0.8rem;
+                    color: #333;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    display: inline-block;
+                    margin-top: 0;
+                    font-weight: bold;
+                    flex: 1; }
+                  #main .center .nearby-shop .nearby-ul .nearby-ul-li1 .li1-d1 .d1-son .d1-son-d .d1-son-da .d1-da-dson div {
+                    padding-top: 1px; }
+                    #main .center .nearby-shop .nearby-ul .nearby-ul-li1 .li1-d1 .d1-son .d1-son-d .d1-son-da .d1-da-dson div span {
+                      display: inline-block;
+                      width: 0.9rem;
+                      height: 1rem;
+                      margin-right: 2px;
+                      background: url(../img/4.png);
+                      background-position: center center;
+                      background-repeat: no-repeat;
+                      background-size: 16px auto; }
+                #main .center .nearby-shop .nearby-ul .nearby-ul-li1 .li1-d1 .d1-son .d1-son-d .d1-son-da .d1-da-dson2 {
+                  font-size: 0;
+                  padding-top: 0.5rem;
+                  overflow: hidden; }
+                  #main .center .nearby-shop .nearby-ul .nearby-ul-li1 .li1-d1 .d1-son .d1-son-d .d1-son-da .d1-da-dson2 .d1-dson2-s {
+                    display: inline-block;
+                    border: 1px solid #16A9ff;
+                    font-size: 0;
+                    border-radius: 2px;
+                    color: #16a9ff;
+                    line-height: 0;
+                    height: 0.75rem;
+                    overflow: hidden; }
+                    #main .center .nearby-shop .nearby-ul .nearby-ul-li1 .li1-d1 .d1-son .d1-son-d .d1-son-da .d1-da-dson2 .d1-dson2-s .d1-dson2-sp1 {
+                      display: inline-block;
+                      line-height: 1;
+                      padding: 2px;
+                      font-size: 0.5rem; }
+                    #main .center .nearby-shop .nearby-ul .nearby-ul-li1 .li1-d1 .d1-son .d1-son-d .d1-son-da .d1-da-dson2 .d1-dson2-s .d1-dson2-sp2 {
+                      line-height: 1;
+                      font-size: 0.5rem; }
+                    #main .center .nearby-shop .nearby-ul .nearby-ul-li1 .li1-d1 .d1-son .d1-son-d .d1-son-da .d1-da-dson2 .d1-dson2-s .d1-dson2-sp3 {
+                      display: inline-block;
+                      padding: 2px;
+                      line-height: 1;
+                      font-size: 0.5rem; }
+                #main .center .nearby-shop .nearby-ul .nearby-ul-li1 .li1-d1 .d1-son .d1-son-d .d1-son-da .d1-da-dson3 {
+                  height: 0.7rem;
+                  margin-top: 8px;
+                  overflow: hidden;
+                  font-size: 0; }
+                  #main .center .nearby-shop .nearby-ul .nearby-ul-li1 .li1-d1 .d1-son .d1-son-d .d1-son-da .d1-da-dson3 .d1-dson3-p1 {
+                    height: 0.6rem;
+                    padding-top: 2px;
+                    overflow: hidden;
+                    display: inline-block;
+                    position: relative; }
+                    #main .center .nearby-shop .nearby-ul .nearby-ul-li1 .li1-d1 .d1-son .d1-son-d .d1-son-da .d1-da-dson3 .d1-dson3-p1 .d1-dson3-p1s {
+                      display: inline-block;
+                      font-size: 0; }
+                      #main .center .nearby-shop .nearby-ul .nearby-ul-li1 .li1-d1 .d1-son .d1-son-d .d1-son-da .d1-da-dson3 .d1-dson3-p1 .d1-dson3-p1s span {
+                        display: inline-block;
+                        width: 0.5rem;
+                        height: 0.5rem;
+                        background-position: 0 0;
+                        background-image: url(../img/newStar.png);
+                        background-repeat: no-repeat;
+                        background-size: auto 0.5rem;
+                        margin-right: 1px; }
+                  #main .center .nearby-shop .nearby-ul .nearby-ul-li1 .li1-d1 .d1-son .d1-son-d .d1-son-da .d1-da-dson3 .d1-dson3-p2 {
+                    font-size: 0.55rem;
+                    line-height: 0.7rem;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    color: #999;
+                    display: inline-block; }
+                    #main .center .nearby-shop .nearby-ul .nearby-ul-li1 .li1-d1 .d1-son .d1-son-d .d1-son-da .d1-da-dson3 .d1-dson3-p2 .line_split {
+                      display: inline-block;
+                      width: 0.4rem;
+                      height: 0.5rem;
+                      background: url(../img/icon_line_split.jpg) no-repeat center 2px; }
+                #main .center .nearby-shop .nearby-ul .nearby-ul-li1 .li1-d1 .d1-son .d1-son-d .d1-son-da .d1-da-sp {
+                  display: block;
+                  margin-top: 0.4rem;
+                  font-size: 0.55rem;
+                  color: #999999;
+                  overflow: hidden;
+                  white-space: nowrap;
+                  text-overflow: ellipsis; }
+              #main .center .nearby-shop .nearby-ul .nearby-ul-li1 .li1-d1 .d1-son .d1-son-d .d1-son-dd {
+                position: relative;
+                padding-bottom: 0;
+                margin-top: 0.6rem; }
+                #main .center .nearby-shop .nearby-ul .nearby-ul-li1 .li1-d1 .d1-son .d1-son-d .d1-son-dd .d1-son-dd1 {
+                  position: relative;
+                  color: #666666;
+                  font-size: 0px; }
+                  #main .center .nearby-shop .nearby-ul .nearby-ul-li1 .li1-d1 .d1-son .d1-son-d .d1-son-dd .d1-son-dd1 .d1-dd-son {
+                    display: inline-block;
+                    width: 86%;
+                    font-size: 0.5rem;
+                    color: #999;
+                    border-top: 1px dashed #e7e9e4; }
+                    #main .center .nearby-shop .nearby-ul .nearby-ul-li1 .li1-d1 .d1-son .d1-son-d .d1-son-dd .d1-son-dd1 .d1-dd-son .d1-dd-son1 {
+                      list-style: none;
+                      margin-top: 0.5rem;
+                      font-size: 0.5rem;
+                      position: relative;
+                      color: #99999;
+                      text-overflow: ellipsis;
+                      white-space: nowrap;
+                      overflow: hidden; }
+                      #main .center .nearby-shop .nearby-ul .nearby-ul-li1 .li1-d1 .d1-son .d1-son-d .d1-son-dd .d1-son-dd1 .d1-dd-son .d1-dd-son1 .d1-ddson-s1 {
+                        background: #fa3e2d; }
+                      #main .center .nearby-shop .nearby-ul .nearby-ul-li1 .li1-d1 .d1-son .d1-son-d .d1-son-dd .d1-son-dd1 .d1-dd-son .d1-dd-son1 .d1-ddson-s2 {
+                        background: #5CA7FF; }
+                      #main .center .nearby-shop .nearby-ul .nearby-ul-li1 .li1-d1 .d1-son .d1-son-d .d1-son-dd .d1-son-dd1 .d1-dd-son .d1-dd-son1 .d1-ddson-sp1 {
+                        display: inline-block;
+                        padding: 0 2px;
+                        margin-right: 0.1rem;
+                        border-radius: 0.1rem;
+                        color: #ffffff;
+                        height: 0.7rem;
+                        line-height: 0.7rem; }
+                #main .center .nearby-shop .nearby-ul .nearby-ul-li1 .li1-d1 .d1-son .d1-son-d .d1-son-dd .d1-son-dd2 {
+                  font-size: 0;
+                  vertical-align: top;
+                  white-space: nowrap;
+                  padding-top: 0.6rem; }
+                  #main .center .nearby-shop .nearby-ul .nearby-ul-li1 .li1-d1 .d1-son .d1-son-d .d1-son-dd .d1-son-dd2 .d1-dd2son {
+                    position: relative;
+                    display: inline-block;
+                    overflow: hidden;
+                    width: 25%;
+                    text-align: center;
+                    font-size: 0;
+                    vertical-align: top;
+                    max-height: 5.25rem; }
+                    #main .center .nearby-shop .nearby-ul .nearby-ul-li1 .li1-d1 .d1-son .d1-son-d .d1-son-dd .d1-son-dd2 .d1-dd2son .d1-dd2son1 {
+                      width: 2.6rem;
+                      height: 2.6rem;
+                      position: relative;
+                      display: block;
+                      border: 1px solid #f7f7f7;
+                      border-radius: 0.15rem; }
+                      #main .center .nearby-shop .nearby-ul .nearby-ul-li1 .li1-d1 .d1-son .d1-son-d .d1-son-dd .d1-son-dd2 .d1-dd2son .d1-dd2son1 img {
+                        display: inline-block;
+                        width: 100%; }
+                      #main .center .nearby-shop .nearby-ul .nearby-ul-li1 .li1-d1 .d1-son .d1-son-d .d1-son-dd .d1-son-dd2 .d1-dd2son .d1-dd2son1 .d1-dd2son2 {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        padding: 0.05rem 0.1rem;
+                        font-size: 0.45rem;
+                        color: #FFF;
+                        background-color: #fc2c50; }
+                    #main .center .nearby-shop .nearby-ul .nearby-ul-li1 .li1-d1 .d1-son .d1-son-d .d1-son-dd .d1-son-dd2 .d1-dd2son .d1-dd2son3 {
+                      color: #ff5757;
+                      margin-top: 0.15rem;
+                      font-size: 0.6rem;
+                      height: 0.85rem;
+                      line-height: 0.85rem;
+                      vertical-align: top;
+                      display: block;
+                      width: 3.1rem;
+                      overflow: hidden;
+                      white-space: nowrap;
+                      text-overflow: ellipsis; }
+  #main .footer {
+    height: 2.5rem;
+    width: 100%;
+    background: #fff;
+    border-top: 0.05rem solid #e7e9e4;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 100; }
+    #main .footer div {
+      margin-top: 0.3rem;
+      float: left;
+      width: 20%;
+      text-align: center;
+      font-size: 0.6rem;
+      color: #333; }
+      #main .footer div span {
+        font-size: 1.2rem;
+        font-family: "iconfont"; }
+    #main .footer .footer-tip1 span {
+      color: #39ac69; }
+
+/*# sourceMappingURL=index.css.map */

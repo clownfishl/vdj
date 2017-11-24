@@ -1,0 +1,361 @@
+@function num($n){
+	@return $n/20
+}
+html,body{
+	height:100%;
+	font-size: num(14rem);
+    text-align: center;
+}
+*{
+	padding:0;
+	margin:0;
+}
+a{
+	text-decoration:none;
+}
+li{
+	list-style:none;
+}
+#login{
+	height:100%;
+	width:100%;
+    .header{
+	    height: num(45rem);
+	    line-height: num(45rem);
+	    color: #616161;
+	    font-size: num(17rem);
+	    border-bottom:1px solid #bbb;
+	    background:#f9f9f9;
+	    .header-arrow{
+	    	width: num(22rem);
+		    height: num(22rem);
+		    overflow: hidden;
+		    position: absolute;
+		    top: num(12rem);
+		    left: num(12rem);
+	    	background:url(../img/iconBg.png) no-repeat 0 num(-63rem);
+	    	background-size:100% auto;
+	    } 
+	}
+	.login-tab{
+		line-height:num(44rem);
+	    font-size:num(14rem);
+	    border-bottom: 1px solid #d7d7d7;
+		.login-tab-left{
+            width: 50%;
+		    display: inline-block;
+		    float:left;
+		    span{
+                border-bottom: 2px solid #f23030;
+     			padding: num(13rem) num(1rem);
+		    }
+		}
+		.login-tab-right{
+            width: 50%;
+            display: inline-block;
+		}
+	}
+	.center{
+	    margin: 0 auto;
+	    padding: 0 num(20rem) 0 num(20rem);
+	    .login-sms{
+			display:none;
+			.input-container{
+				box-sizing: border-box;
+				position: relative;
+			    width: 100%;
+			    height: num(48rem);
+			    line-height: num(48rem);
+			    overflow: hidden;
+			    padding: 0 num(5rem);
+			    background-color: #fff;
+			    border-bottom: 1px solid #d7d7d7;
+				.input-sms-sp{
+	                position: absolute;
+				    width: num(62rem);
+				    text-align: right;
+				    .input-sms-sp2{
+				    	width: 0;
+					    height: 0;
+					    border-left: num(4rem) solid transparent;
+					    border-right: num(4rem) solid transparent;
+					    border-top: num(5rem) solid #ABABAB;
+					    display: inline-block;
+					    margin: 0 num(7rem) 0 num(2rem);
+					    padding-top: num(1rem);
+				    }
+				}
+				.sms-input1{
+	                width: 100%;
+				    padding-left: num(60rem);
+				    padding-right: num(130rem);
+				    border-radius: 0;
+				    border: 0;
+				    display: inline-block;
+				    box-sizing: border-box;
+				    font-size: num(14rem);
+				    outline: 0;
+				}
+				button{
+	                width: num(118rem);
+				    border-left:1px solid #d7d7d7!important;
+				    padding: 0;
+				    height: num(23rem);
+				    line-height: num(23rem);
+				    top: num(12.5rem);
+				    outline: 0;
+				    background-color: #fff;
+				    box-shadow: none;
+	                color: #848689;
+	                position: absolute;
+	                right: 0;
+	                font-size: num(14rem);
+                    border: 0;
+				}
+				.sms-input2{
+					width: 100%;
+				    padding-right: num(32rem);
+				    padding-left: 0;
+				    border-radius: 0;
+				    border: 0;
+				    display: inline-block;
+				    box-sizing: border-box;
+				    font-size:num(14rem);
+				    outline: 0;
+				}
+			}
+		}
+	    .center-inp-active{
+	    	display:block;
+	    	.inp-container{
+	    		position: relative;
+			    width: 100%;
+			    height:num(48rem);
+			    line-height:num(48rem);
+			    overflow: hidden;
+			    padding: 0 num(5rem);
+			    background-color: #fff;
+			    border-bottom: 1px solid #d7d7d7;
+			    box-sizing: border-box;
+	    		.inp-txt{
+                    position:absolute;
+				    width:num(60rem);
+				    display:inline-block;
+				    text-align:left;
+	    		}
+	    		.txt{
+                    width: 100%;
+                    padding: 0 num(30rem) 0 num(60rem);
+                    border-radius: 0;
+				    border: 0;
+				    font-size:num(14rem);
+				    outline:none;
+				    display:inline-block;
+				    box-sizing: border-box;
+	    		}
+	    		.psd{
+	    			width: 100%;
+                    padding:0 num(70rem) 0 num(60rem);
+                    border-radius: 0;
+				    border: 0;
+				    font-size:num(14rem);
+				    outline:none;
+				    display:inline-block;
+				    box-sizing: border-box;
+	    		}
+	    		.psd-visible{
+	    			position: absolute;
+				    right: num(5rem);
+				    top: num(15rem);
+				    height: num(18rem);
+				    overflow: hidden;
+				    z-index: 99;
+	    			span{
+	                    display: block;
+					    width: num(30rem);
+					    height: num(18rem);
+					    background-image: url(../img/hide_password.png);
+					    background-repeat: no-repeat;
+					    background-size: 100% auto;
+					    background-sizing: padding-box;
+					    color: #fff;
+					    -webkit-box-sizing: border-box;
+					    -moz-box-sizing: border-box;
+					    box-sizing: border-box;
+	    		    }
+	    		}
+	    	}
+	    }
+	    .notice{
+	    	display:block;
+	        font-size: num(12rem);
+		    line-height: num(30rem);
+		    color: #f23030;
+		    min-height: num(15rem);
+		    text-align:left;
+	    }
+	    .dl{
+	    	display:block;
+	    	font-size: num(14rem);
+	        outline: 0;
+	    	color:#848689;
+	        height: num(45rem);
+		    line-height: num(46rem);
+		    background-color: #eee;
+		    border-radius: 2px;
+		    border: 0;
+	    }
+	    .on-dl{
+	        display: block;
+	        border: 1px solid #f23030;
+		    background: #fff;
+		    color: #f23030;
+		    margin-top: num(10rem);
+		    height: num(45rem);
+		    line-height: num(46rem); 
+		    border-radius: 2px;   
+		    font-size: num(14rem);
+	        outline: 0;
+	    }
+	    .turn-reg{
+	    	margin-top: num(20rem);
+	        text-align: center;
+	    	.lose-psd{
+	    		float: left;
+	    		color: #333;
+			    text-indent: num(25rem);
+			    line-height: num(22rem);
+			    display: inline-block;
+			    font-size:num(12rem);
+	            .lose-psd-sp1{
+	                width: num(22rem);
+				    height: num(22rem);
+				    overflow: hidden;
+				    position: absolute;
+				    background-image: url(../img/iconBg.png);
+				    background-repeat: no-repeat;
+				    background-size: 100% auto;
+				    background-position: 0 num(-23rem);
+				    display:block;
+		    	}
+	    	}
+	    	.quick-reg{
+	    		float: right;
+	    		color: #333;
+			    text-indent: num(25rem);
+			    line-height: num(22rem);
+			    font-family: PingFang-SC-Regular;
+			    display: inline-block;
+			    font-size:num(12rem);
+	    		.quick-reg-sp1{
+	                width: num(22rem);
+				    height: num(22rem);
+				    overflow: hidden;
+				    position: absolute;
+				    background-image: url(../img/iconBg.png);
+				    background-repeat: no-repeat;
+				    background-size: 100% auto;
+				    background-position: 0 num(-42rem);
+				    display:block;
+	    		}
+	    	}
+	    }
+	    .other-dl{
+    	    text-align: center;
+    	    margin-top:num(155rem);
+		    height: num(85rem);
+		    position: relative;
+		    padding: num(30rem) num(10rem) 0 num(10rem);
+		    border-top: 1px solid #d7d7d7;
+	    	h4{
+	            position: absolute;
+			    top: num(-19rem);
+			    left: 50%;
+			    background-color: white;
+			    padding: num(5rem) num(15rem);
+			    color: #bfbfbf;
+			    transform: translateX(-50%);
+			    font-size: num(14rem);
+	    	}
+	    	.other-dl-a1{
+	    		position: relative;
+			    width: num(72rem);
+			    color: #616161;
+			    margin: 0 num(10rem);
+			    font-size: num(14rem);
+			    display: inline-block;
+			    text-align: center;
+	            span{
+	                overflow: hidden;
+				    position: absolute;
+				    background-image: url(../img/iconBg.png);
+				    background-repeat: no-repeat;
+				    background-size: 100% auto;
+				    left: num(25rem);
+				    background-position: 0 -129px;
+				    width: num(22rem);
+				    height: num(22rem);
+				    display: block;
+	            }
+	    	}
+	    	.other-dl-a2{
+	    		position: relative;
+			    width: num(72rem);
+			    color: #616161;
+			    margin: 0 num(10rem);
+			    font-size: num(14rem);
+			    display: inline-block;
+			    text-align: center;
+	            span{
+	                left:num(25rem);
+				    background-position: 0 num(-155rem);
+				    width: num(22rem);
+				    height: num(22rem);
+			        overflow: hidden;
+				    position: absolute;
+				    background-image: url(../img/iconBg.png);
+				    background-repeat: no-repeat;
+				    background-size: 100% auto;
+				    display: block;
+	            }
+	    	}
+	    	.last-p{
+	    		position: absolute;
+			    bottom: 0;
+			    left: 0;
+			    width: 100%;
+			    height: num(30rem);
+			    font-size: num(14rem);
+			    line-height:num(3rem);
+	    		p{
+	    			a{
+	                    width: auto;
+					    margin: 0;
+					    color: #333;
+					    text-decoration: underline;
+					    position: relative;
+					    font-size: num(14rem);
+					    display: inline-block;
+					    text-align: center;
+	    			}
+	    		}
+	    	}
+	    }
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
